@@ -1,7 +1,57 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/luiza/projects/bookmarks/spec/features/infrastructure_spec.rb": {
+      "/Users/kierancarty/Projects/bookmark_manager/spec/bookmarks_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kierancarty/Projects/bookmark_manager/lib/bookmarks.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kierancarty/Projects/bookmark_manager/spec/features/display_bookmarks_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/kierancarty/Projects/bookmark_manager/spec/features/infrastructure_spec.rb": {
         "lines": [
           1,
           1,
@@ -12,6 +62,6 @@
         ]
       }
     },
-    "timestamp": 1652104955
+    "timestamp": 1652109636
   }
 }
