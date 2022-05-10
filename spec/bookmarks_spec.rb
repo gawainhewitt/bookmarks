@@ -11,7 +11,7 @@ describe Bookmarks do
     end 
 
     it 'returns a list of bookmarks as an array' do 
-      expect(Bookmarks::all).to include("www.google.com")
+      expect(Bookmarks::all).to include("http://www.google.com/")
     end
   end 
 end 
