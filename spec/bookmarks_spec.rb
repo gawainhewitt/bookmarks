@@ -26,8 +26,8 @@ describe Bookmarks do
       url = "www.luiza.com"
       Bookmarks.add(url, title)
       variable = Bookmarks.all[0]
-      expect(variable).to eq(title)
-      expect(Bookmarks.all).to include(url)
+      expect(variable['title']).to eq(title)
+      expect(variable['url']).to include(url)
     end
     
   end
