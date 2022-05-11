@@ -7,11 +7,8 @@ describe Bookmarks do
     end 
 
     it 'returns a list of bookmarks as an array' do 
-      connection = PG.connect(dbname: 'bookmark_manager_test')
-
-      # Add the test data
-      connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com/');")
-      connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.google.com/');")
+      Bookmarks.add('http://www.makersacademy.com/')
+      Bookmarks.add('http://www.google.com/')
       
       bookmarks = Bookmarks.all
       
@@ -19,6 +16,14 @@ describe Bookmarks do
       expect(bookmarks).to include('http://www.makersacademy.com/')
     end
   end 
+
+  describe '#add' do
+    it 'adds the new bookmark' do
+      bookmark = 'www.luiza.com'
+      Bookmarks.add(bookmark)
+      expect(Bookmarks.all).to include('www.luiza.com')
+    end
+  end
 end 
 
 
