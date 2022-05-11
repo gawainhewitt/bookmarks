@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/luiza/projects/bookmarks/spec/bookmarks_spec.rb": {
+      "/home/gawain/Projects/bookmarks-mon/spec/bookmarks_spec.rb": {
         "lines": [
           1,
           null,
@@ -30,7 +30,21 @@
           null
         ]
       },
-      "/Users/luiza/projects/bookmarks/spec/features/display_bookmarks_spec.rb": {
+      "/home/gawain/Projects/bookmarks-mon/spec/features/add_bookmark_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/gawain/Projects/bookmarks-mon/spec/features/display_bookmarks_spec.rb": {
         "lines": [
           1,
           1,
@@ -48,7 +62,7 @@
           null
         ]
       },
-      "/Users/luiza/projects/bookmarks/spec/features/infrastructure_spec.rb": {
+      "/home/gawain/Projects/bookmarks-mon/spec/features/infrastructure_spec.rb": {
         "lines": [
           1,
           1,
@@ -59,6 +73,6 @@
         ]
       }
     },
-    "timestamp": 1652253798
+    "timestamp": 1652277310
   }
 }
