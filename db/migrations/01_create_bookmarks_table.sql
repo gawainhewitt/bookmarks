@@ -1,4 +1,4 @@
-CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60), title VARCHAR(30));
 
 INSERT INTO bookmarks
 VALUES ('1', 'http://www.makersacademy.com/'),

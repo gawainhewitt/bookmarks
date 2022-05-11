@@ -18,11 +18,18 @@ describe Bookmarks do
   end 
 
   describe '#add' do
-    it 'adds the new bookmark' do
-      bookmark = 'www.luiza.com'
-      Bookmarks.add(bookmark)
-      expect(Bookmarks.all).to include('www.luiza.com')
+    it 'responds to two arguments' do
+      expect(Bookmarks).to respond_to(:add).with(2).arguments
     end
+    it 'adds title and url' do 
+      title = "luiza"
+      url = "www.luiza.com"
+      Bookmarks.add(url, title)
+      variable = Bookmarks.all[0]
+      expect(variable).to eq(title)
+      expect(Bookmarks.all).to include(url)
+    end
+    
   end
 end 
 
