@@ -6,6 +6,6 @@ feature "add bookmark" do
     fill_in :title, with: "Luiza"
     fill_in :new_url, with: "http://www.luiza.com"
     click_button("Submit")
-    expect(page).to have_content "http://www.luiza.com"
+    expect(page).to have_content "Luiza"
   end
 end

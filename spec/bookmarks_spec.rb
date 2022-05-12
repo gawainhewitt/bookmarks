@@ -10,10 +10,10 @@ describe Bookmarks do
       Bookmarks.add('http://www.makersacademy.com/', 'Makers')
       Bookmarks.add('http://www.google.com/', 'Google')
       
-      p bookmarks = Bookmarks.all
+      bookmarks = Bookmarks.all
       
-      expect(bookmarks[0]['url']).to include('http://www.makersacademy.com/')
-      expect(bookmarks[1]['url']).to include('http://www.google.com/')
+      expect(bookmarks[0].url).to include('http://www.makersacademy.com/')
+      expect(bookmarks[1].url).to include('http://www.google.com/')
     end
   end 
 
@@ -26,8 +26,8 @@ describe Bookmarks do
       url = "www.luiza.com"
       Bookmarks.add(url, title)
       bookmark = Bookmarks.all[0]
-      expect(bookmark['title']).to eq(title)
-      expect(bookmark['url']).to include(url)
+      expect(bookmark.title).to eq(title)
+      expect(bookmark.url).to include(url)
     end
     
   end
