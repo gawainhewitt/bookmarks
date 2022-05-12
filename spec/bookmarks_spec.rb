@@ -7,13 +7,13 @@ describe Bookmarks do
     end 
 
     it 'returns a list of bookmarks as an array' do 
-      Bookmarks.add('http://www.makersacademy.com/')
-      Bookmarks.add('http://www.google.com/')
+      Bookmarks.add('http://www.makersacademy.com/', 'Makers')
+      Bookmarks.add('http://www.google.com/', 'Google')
       
-      bookmarks = Bookmarks.all
+      p bookmarks = Bookmarks.all
       
-      expect(bookmarks).to include('http://www.google.com/')
-      expect(bookmarks).to include('http://www.makersacademy.com/')
+      expect(bookmarks[0]['url']).to include('http://www.makersacademy.com/')
+      expect(bookmarks[1]['url']).to include('http://www.google.com/')
     end
   end 
 
@@ -25,9 +25,9 @@ describe Bookmarks do
       title = "luiza"
       url = "www.luiza.com"
       Bookmarks.add(url, title)
-      variable = Bookmarks.all[0]
-      expect(variable['title']).to eq(title)
-      expect(variable['url']).to include(url)
+      bookmark = Bookmarks.all[0]
+      expect(bookmark['title']).to eq(title)
+      expect(bookmark['url']).to include(url)
     end
     
   end
